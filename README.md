@@ -16,6 +16,7 @@ Documentation
 Code Examples
 
 Data Cleaning
+
 from data_cleaning_script import remove_duplicates, standardize_column_names
 
 import pandas as pd
@@ -30,6 +31,7 @@ df = standardize_column_names(df)
 print(df)
 
 Data Loading Example
+
 from data_loading_script import load_to_csv
 import pandas as pd
 
@@ -44,8 +46,11 @@ load_df_to_csv(df, "students.csv")
 Contribution Guide
 
 I followed the Gitflow branching strategy:
+
 main → Branch for stable, production-ready code.
+
 develop → Integration branch.
+
 feature/branch-name → Branch for each script (e.g., feature/data-cleaning).
 
 Steps I followed to Contribute:
