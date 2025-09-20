@@ -1,7 +1,7 @@
 # data-engineering-toolkit-
 A collection of scripts for common data engineering tasks.
 
-Project Purpose
+**Project Purpose**
 
 The Data Engineering Toolkit is a collection of reusable scripts that demonstrate fundamental data engineering tasks. It provides examples for Data Cleaning Tasks, Data Transformation Tasks and Data Loading Tasks. This project is designed to practice branching strategies, version control and collaboration workflows while building a hands-on data engineering toolkit.
 
@@ -13,9 +13,9 @@ Documentation
 3. Data Loading: Auto-detect file format and convert to Parquet, Writing/Loading dataframe into different file formats (Parquet, CSV, JSON), Save CSV to DataFrame, and Save JSON to DataFrame
 
 
-Code Examples
+**Code Examples**
 
-Data Cleaning
+*Data Cleaning*
 
 from data_cleaning_script import remove_duplicates, standardize_column_names
 
@@ -30,9 +30,10 @@ df = remove_duplicates(df)
 df = standardize_column_names(df)
 print(df)
 
-Data Loading Example
+*Data Loading Example*
 
 from data_loading_script import load_to_csv
+
 import pandas as pd
 
 df = pd.DataFrame({
@@ -43,7 +44,7 @@ df = pd.DataFrame({
 load_df_to_csv(df, "students.csv")
 
 
-Contribution Guide
+**Contribution Guide**
 
 I followed the Gitflow branching strategy:
 
@@ -53,17 +54,26 @@ develop → Integration branch.
 
 feature/branch-name → Branch for each script (e.g., feature/data-cleaning).
 
-Steps I followed to Contribute:
+**Steps I followed to Contribute:**
 
 Created repository on Github
+
 Cloned the repository to my local directory
+
 Created a develop branch
+
 Created each feature branch: git checkout -b feature/feature-name
+
 Add files to git
+
 Committed changes frequently: git commit -m "Add new cleaning function"
+
 Pushed each branch to the develop branch: git push origin feature/feature-name
+
 Reviewed and checked for necessary changes
+
 Opened a Pull Request to merge into develop
+
 When it was all set, I merged the develop branch into main.
 
 
