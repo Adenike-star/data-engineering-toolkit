@@ -14,6 +14,7 @@ Documentation
 
 
 Code Examples
+
 Data Cleaning
 from data_cleaning_script import remove_duplicates, standardize_column_names
 
